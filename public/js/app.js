@@ -8,7 +8,7 @@ console.log('Client side js file loaded!')
     })
 }) */
 
-fetch('http://localhost:3000/weather?address=boston')
+/* fetch('/weather?address=boston')
     .then((response)=>{
         response.json()
         .then((data)=>{
@@ -18,7 +18,7 @@ fetch('http://localhost:3000/weather?address=boston')
              console.log(data.location)
              console.log(data.forecast.forecast)
         })
-    })
+    }) */
 
       const weatherForm = document.querySelector('form')
     const search = document.querySelector('input')
@@ -32,7 +32,7 @@ fetch('http://localhost:3000/weather?address=boston')
         messageOne.textContent='Loading...'
         
         
-        fetch('http://localhost:3000/weather?address=' + search.value)
+        fetch('/weather?address=' + search.value)
             .then((response)=>{
                 response.json()
                 .then((data)=>{

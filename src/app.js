@@ -10,6 +10,7 @@ const forecast = require('../src/utils/forecast')
 //le paso dirname como primer parametro y como segundo un string para manipular el path
 
 const app = express(); // aqui creo la instancia de express que voy a usar
+const port = proccess.env.PORT || 3000
 
 //defino los paths que voy a usar en mi configuracion de express
 const publicDirectoryPath = path.join(__dirname, '../public');
@@ -107,6 +108,6 @@ app.get('*', (req, res) =>{ // cuando pongo asterisco hago referencia a todo lo 
 })
 
 
-app.listen(3000, ()=> {
+app.listen(port, ()=> {
     console.log('Server is up and running on port 3000.')
 })

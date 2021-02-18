@@ -10,7 +10,7 @@ const forecast = require('../src/utils/forecast')
 //le paso dirname como primer parametro y como segundo un string para manipular el path
 
 const app = express(); // aqui creo la instancia de express que voy a usar
-const port = proccess.env.PORT || 3000
+const port = process.env.PORT || 3000
 
 //defino los paths que voy a usar en mi configuracion de express
 const publicDirectoryPath = path.join(__dirname, '../public');

@@ -39,8 +39,9 @@ console.log('Client side js file loaded!')
                     if(data.error){
                         return messageOne.textContent = data.error
                     }
+                    console.log(data.forecast)
                     messageOne.textContent = data.location
-                    messageTwo.textContent = 'The forecast for today is ' + data.forecast.forecast + '. Its ' + data.forecast.current+ ' degrees out. But it feels like ' + data.forecast.feelsLike
+                    messageTwo.textContent = 'The forecast for today is ' + data.forecast.forecast + '. Its ' + data.forecast.current+ ' degrees out. But it feels like ' + data.forecast.feelsLike +  ' the humidity index is ' + data.forecast.humidity + '%'  
                 })
             })
         

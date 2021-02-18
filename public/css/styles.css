@@ -70,3 +70,10 @@ button {
     font-size: 1.25rem;
     font-weight: 600;
 }
+
+#about {
+    font-size: 1rem;
+    color: #696969;
+    line-height: 1.9rem;
+    margin-bottom: 5%;
+}
